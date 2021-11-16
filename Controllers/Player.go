@@ -46,7 +46,7 @@ func GetPlayerByID(c *gin.Context) {
 
 func LoginTopBos(c *gin.Context) {
 	client := &http.Client{}
-	PostData := strings.NewReader("partnerId=887207&pwd=Kuda1234!")
+	PostData := strings.NewReader("partnerId=[yourPartnerId]&pwd=[yourPassword]")
 	req, err := http.NewRequest("POST", "https://trade.topbos.com/trade/pwdLogin", PostData)
 
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
