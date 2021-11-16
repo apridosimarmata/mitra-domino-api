@@ -21,8 +21,8 @@ func BuildDBConfig() *DBConfig {
 	dbConfig := DBConfig{
 		Host:     "localhost",
 		Port:     3306,
-		User:     "domino",
-		Password: "domino",
+		User:     "mysqluser",
+		Password: "mysqlpassword",
 		DBName:   "domino",
 	}
 	return &dbConfig
